@@ -18,7 +18,7 @@ yes | ./android_vendor_google_emu-x86/download-files.sh "${ARCH}"
 
 yes | unzip "${ARCH}-*-linux.zip"
 
-7z e x86_64/system.img
+7z e "${ARCH}/system.img"
 
 binwalk -e \
     --depth 1 \
